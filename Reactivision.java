@@ -37,11 +37,7 @@ public class Reactivision extends PApplet{
 	     TuioObject tobj = tuioObjectList.get(i);
 	     stroke(0); 
 	     fill(255);
-	     pushMatrix();
-	     translate(tobj.getScreenX(width),tobj.getScreenY(height));
-	     rotate(tobj.getAngle());
-	     //rect(-obj_size/2,-obj_size/2,obj_size,obj_size);
-	     popMatrix();
+	     rect(tobj.getScreenX(width), tobj.getScreenY(height),80,80);
 	     fill(150);
 	     text(""+tobj.getSymbolID(), tobj.getScreenX(width), tobj.getScreenY(height));
 	     rect(tobj.getScreenX(width), tobj.getScreenY(height),80,80);
